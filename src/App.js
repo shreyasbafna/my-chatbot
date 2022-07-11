@@ -13,7 +13,8 @@ const purchaseNft = () => {
   const tagManagerArgs = {
     gtmId: 'GTM-KJBRDM7',
     dataLayer:{
-     event: 'buynft',
+     event: 'nftAmount',
+     amount: `${Math.random(10) * 100}`
     }
 }
 TagManager.dataLayer(tagManagerArgs)
