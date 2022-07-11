@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Demo For Live Chat Bot
+          Demo For Live Chat Bot / GTAG
         </p>
       </header>
     </div>
