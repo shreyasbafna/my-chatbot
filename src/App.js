@@ -18,8 +18,9 @@ const purchaseNft = () => {
      event: 'nftAmount',
      amount: amt
     }
-}
-TagManager.dataLayer(tagManagerArgs)
+  }
+  TagManager.dataLayer(tagManagerArgs)
+  setAmount(234.43)
 }
   return (
     <div className="App">
