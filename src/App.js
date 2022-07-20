@@ -3,18 +3,20 @@ import TagManager from 'react-gtm-module'
 
 function App() {
 
+  const [amount, setAmount] = useState(234.43)
+
 const tagManagerArgs = {
     gtmId: 'GTM-KJBRDM7'
 }
 TagManager.initialize(tagManagerArgs)
 
 const purchaseNft = () => {
-  console.log(parseInt(Math.random(10) * 100))
+  const amt = amount;
   const tagManagerArgs = {
     gtmId: 'GTM-KJBRDM7',
     dataLayer:{
      event: 'nftAmount',
-     amount: `${parseInt(Math.random(10) * 100)}`
+     amount: amt
     }
 }
 TagManager.dataLayer(tagManagerArgs)
