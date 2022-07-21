@@ -5,17 +5,17 @@ import TagManager from 'react-gtm-module'
 function App() {
 
   const [amount, setAmount] = useState(234.43)
-  
-TagManager.initialize(tagManagerArgs)
 
+  
   const amt = amount;
   const tagManagerArgs = {
     gtmId: 'GTM-KJBRDM7',
     dataLayer:{
-     event: 'nftAmount',
-     amount: amt
+      event: 'nftAmount',
+      amount: amt
     }
   }
+  TagManager.initialize(tagManagerArgs)
   TagManager.dataLayer(tagManagerArgs)
   setAmount(234.43)
   return (
