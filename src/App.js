@@ -5,12 +5,9 @@ import TagManager from 'react-gtm-module'
 function App() {
 
   const [amount, setAmount] = useState(234.43)
-const tagManagerArgs = {
-    gtmId: 'GTM-KJBRDM7'
-}
+  
 TagManager.initialize(tagManagerArgs)
 
-const purchaseNft = () => {
   const amt = amount;
   const tagManagerArgs = {
     gtmId: 'GTM-KJBRDM7',
@@ -21,14 +18,13 @@ const purchaseNft = () => {
   }
   TagManager.dataLayer(tagManagerArgs)
   setAmount(234.43)
-}
   return (
     <div className="App">
       <header className="App-header">
         <p>
           Demo For Live Chat Bot / GTAG
         </p>
-        <button className='buyNFT' onClick={() => purchaseNft()}>
+        <button className='buyNFT' onClick={() => alert('hello')}>
           Buy NFT
         </button>
       </header>
