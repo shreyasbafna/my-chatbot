@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css';
 import TagManager from 'react-gtm-module'
 
@@ -17,7 +17,9 @@ function App() {
   }
   TagManager.initialize(tagManagerArgs)
   TagManager.dataLayer(tagManagerArgs)
-  setAmount(234.43)
+  useEffect(() => {
+    setAmount(234.43)
+  }, [])
   return (
     <div className="App">
       <header className="App-header">
